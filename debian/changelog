@@ -1,3 +1,30 @@
+qt6-tools (6.6.2-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.6.2).
+  * Bump Qt B-Ds to 6.6.2.
+  * Build-depend on pkgconf instead of pkg-config as the latter has been
+    superseded by the former.
+  * Update ABI to 6.6.2 and rename it to qt6-*-private-abi.
+  * Update lintian-overrides.
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 15 Feb 2024 21:08:54 +0100
+
+qt6-tools (6.6.1-3) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Force build with llvm-toolchain-17.
+
+ -- Patrick Franz <deltaone@debian.org>  Wed, 24 Jan 2024 22:09:32 +0100
+
+qt6-tools (6.6.1-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Add binary package designer-qt6-plugins (Closes: #1057299).
+  * Update d/copyright.
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 11 Jan 2024 19:07:13 +0100
+
 qt6-tools (6.6.1-1) experimental; urgency=medium
 
   [ Patrick Franz ]
