@@ -1,3 +1,9 @@
+qt6-tools (6.8.0-0deepin4) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 17:47:59 +0800
+
 qt6-tools (6.8.0-0deepin3) unstable; urgency=medium
 
   * update debian/changelog
