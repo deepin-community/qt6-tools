@@ -1875,10 +1875,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN19QFormBuilderStrings13iconAttributeE@Qt_6 6.12.0
  _ZN19QFormBuilderStrings13textAttributeE@Qt_6 6.12.0
  _ZN19QFormBuilderStrings14flagsAttributeE@Qt_6 6.12.0
- _ZN19QFormBuilderStrings14labelAttributeE@Qt_6 6.12.0
- _ZN19QFormBuilderStrings14titleAttributeE@Qt_6 6.12.0
- _ZN19QFormBuilderStrings16toolTipAttributeE@Qt_6 6.12.0
- _ZN19QFormBuilderStrings18whatsThisAttributeE@Qt_6 6.12.0
  _ZN19QFormBuilderStrings8instanceEv@Qt_6 6.12.0
  _ZN19QFormBuilderStringsC1Ev@Qt_6 6.12.0
  _ZN19QFormBuilderStringsC2Ev@Qt_6 6.12.0
