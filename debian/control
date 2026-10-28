@@ -25,6 +25,7 @@ Build-Depends: debhelper-compat (= 13),
                qt6-base-private-dev (>= 6.11.2+dfsg~),
                qt6-declarative-dev (>= 6.11.2+dfsg~),
                qt6-declarative-private-dev (>= 6.11.2+dfsg~),
+               qt6-languageserver-private-dev (>= 6.12~),
 Standards-Version: 4.7.4
 Homepage: https://www.qt.io/developers/
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt6/qt6-tools
