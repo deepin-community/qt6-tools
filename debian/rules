@@ -23,6 +23,7 @@ override_dh_auto_configure:
 		-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 		-DCMAKE_SKIP_INSTALL_RPATH=ON \
 		-DINSTALL_PUBLICBINDIR=/usr/bin \
+		-DQT_FEATURE_kmap2qmap=OFF \
 		$(extra_cmake_args)
 
 override_dh_shlibdeps:
