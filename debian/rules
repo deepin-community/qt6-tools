@@ -2,6 +2,14 @@
 
 include /usr/share/dpkg/architecture.mk
 
+# Bootstrap pass on sw64: qdoc-qt6 for sw64 is not published yet, so the
+# documentation build (and its qdoc build-deps) must be skipped there.
+# Documentation packages are Architecture: all and are built on amd64.
+ifeq ($(DEB_HOST_ARCH),sw64)
+DEB_BUILD_PROFILES := $(filter-out nodoc,$(DEB_BUILD_PROFILES)) nodoc
+endif
+export DEB_BUILD_PROFILES
+
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 export LLVM_INSTALL_DIR := $(shell llvm-config --prefix)
