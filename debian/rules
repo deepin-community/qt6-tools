@@ -1,8 +1,5 @@
 #!/usr/bin/make -f
 
-# 净室打包:强制 nodoc(等价 DEB_BUILD_PROFILES=nodoc),保证 dpkg-buildpackage -b -us -uc 裸命令可用
-DEB_BUILD_PROFILES := $(filter-out nodoc,$(DEB_BUILD_PROFILES)) nodoc
-export DEB_BUILD_PROFILES
 include /usr/share/dpkg/architecture.mk
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
@@ -29,12 +26,12 @@ override_dh_auto_configure:
 override_dh_shlibdeps:
 	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
 
-ifneq (,$(filter nodoc,$(DEB_BUILD_PROFILES)))
+ifeq (,$(filter nodoc,$(DEB_BUILD_PROFILES)))
 override_dh_auto_build-indep:
 	dh_auto_build -- docs
 endif
 
-ifneq (,$(filter nodoc,$(DEB_BUILD_PROFILES)))
+ifeq (,$(filter nodoc,$(DEB_BUILD_PROFILES)))
 override_dh_auto_install-indep:
 	DESTDIR=$(CURDIR)/debian/tmp dh_auto_build -- install_docs
 	# Remove build path from index files.
